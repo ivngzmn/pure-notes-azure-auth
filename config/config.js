@@ -12,7 +12,7 @@ exports.creds = {
 
   responseMode: "form_post",
 
-  redirectUrl: "http://localhost:5000/auth/openid/return",
+  redirectUrl: "https://todo-auth-mvc.herokuapp.com/auth/openid/return",
 
   allowHttpForRedirectUrl: true,
 
@@ -40,7 +40,7 @@ exports.creds = {
   clockSkew: null,
 };
 
-exports.destroySessionUrl = "http://localhost:5000";
+exports.destroySessionUrl = "https://todo-microsoft-auth-mvc.herokuapp.com";
 
 exports.useMongoDBSessionStore = false;
 
