@@ -40,7 +40,7 @@ exports.creds = {
   clockSkew: null,
 };
 
-exports.destroySessionUrl = "https://todo-microsoft-auth-mvc.herokuapp.com";
+exports.destroySessionUrl = "https://todo-auth-mvc.herokuapp.com";
 
 exports.useMongoDBSessionStore = false;
 
