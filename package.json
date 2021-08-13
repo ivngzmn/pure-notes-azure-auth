@@ -1,17 +1,17 @@
 {
   "version": "1.0.0",
   "name": "todolist-microsoft-auth-mvc",
-  "engines": {
-    "node": "12.11.1"
-    },
   "license": "MIT",
   "main": "index.js",
   "author": "",
   "scripts": {
     "start": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon server.js && tailwindcss build -i src/tailwind.css -o public/css/style.css -w",
+    "build:tailwind": "cross-env NODE_ENV=production postcss src/tailwind.css -o public/style.css"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.3.3",
     "connect-mongo": "^3.2.0",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
@@ -22,5 +22,10 @@
     "nodemon": "^2.0.12",
     "passport": "^0.4.1",
     "passport-azure-ad": "^4.3.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
   }
 }

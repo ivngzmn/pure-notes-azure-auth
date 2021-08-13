@@ -4,10 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <title>TodoLIst</title>
 </head>
 <body>
-    <h1>Create A Todo List By Clicking The Button Below</h1>
-    <a href="/auth/login"> New Todo List</a>
+    <!-- Using Tailwind CSS v2.0+ -->
+<div class="bg-white">
+    <div class="relative bg-gray-900">
+      <!-- Decorative image and overlay -->
+      <div aria-hidden="true" class="absolute inset-0 ">
+        <img src="https://tailwindui.com/img/ecommerce-images/home-page-01-hero-full-width.jpg" alt="" class="w-full h-screen object-center object-cover">
+      </div>
+      <div aria-hidden="true" class="absolute inset-0 bg-gray-900 opacity-50 h-screen"></div>
+  
+      <div class="relative max-w-3xl mx-auto py-64 px-6 flex flex-col items-center text-center md:py-60 lg:py-64">
+        <span class="font-extralight mt-4 text-6xl md:text-8xl lg:text-9xl mb-10 text-white"><%= new Intl.DateTimeFormat('en-US',{ year: 'numeric', month: 'short', day: '2-digit'}).format(new Date()) %></span>
+
+        <!-- clock ?-->
+        <section class="text-left">
+            <h1 class="mt-8 text-5xl font-thin tracking-tight text-white md:text-5xl lg:text-6xl">Let's Be Productive.</h1>
+            <p class="mt-4 mb-2 font-light text-xl md:text-2xl lg:text-3xl text-white">Create A To-Do List.</p>
+            <p class="mt-2 mb-3 font-light text-base md:text-xl lg:text-2xl text-white">Log in with your Microsoft or GitHub account.</p>
+            <a href="/auth/login">
+            <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
+                <!-- Heroicon name: outline/login -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+                  </svg>
+                   Sign in 
+                </button>                       
+            </a>
+        </section>       
+      </div>
+    </div>
+  </div>    
 </body>
 </html>
