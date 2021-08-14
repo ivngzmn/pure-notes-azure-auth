@@ -3,6 +3,10 @@
   "name": "todolist-microsoft-auth-mvc",
   "license": "MIT",
   "main": "index.js",
+  "engines": {
+    "node": "16.x",
+    "npm": "7.x"
+  },
   "author": "Ivan Guzman",
   "scripts": {
     "start": "nodemon server.js",
