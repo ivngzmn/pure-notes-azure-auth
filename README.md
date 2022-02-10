@@ -1,6 +1,6 @@
-# ToDo App
+# Pure ToDo App
 
-A simple ToDo app with Azure AD authentication with use of MongoDB Atlas to save each users ToDo list.
+A ToDo app with Azure AD authentication with use of MongoDB Atlas. Users can login to their profile and find their list of tasks. They can add new tasks through an input, which they can then edit or delete all tasks in their profile.
 
 **Link to project:**(https://todo-auth-mvc.herokuapp.com/)
 
