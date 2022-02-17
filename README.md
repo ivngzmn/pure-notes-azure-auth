@@ -1,4 +1,4 @@
-# Pure ToDo App
+# Pure Notes App
 
 A ToDo app with Azure AD authentication with use of MongoDB Atlas. Users can login to their profile and find their list of tasks. They can add new tasks through an input, which they can then edit or delete all tasks in their profile.
 
